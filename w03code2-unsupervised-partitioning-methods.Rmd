@@ -2,7 +2,9 @@
 title: "Unsupervised Analysis - Partitioning Methods"
 author: "K Siegmund"
 date: "6/3/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 # {.tabset}
