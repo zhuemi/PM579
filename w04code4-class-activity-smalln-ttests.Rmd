@@ -75,11 +75,11 @@ dim(simdat)
 
 Without loss of generality, assume the first 3 columns are observations from group 1 and the last 3 columns are from group 2. The t-test is computed from the group averages and sds. Compute these now.
 ```{r sumsim}
-gp1_avg <- 
-gp2_avg <- 
+gp1_avg <- rowMeans(simdat[,1:3])
+gp2_avg <- rowMeans(simdat[,4:6])
 
-gp1_sd <- 
-gp2_sd <- 
+gp1_sd <- rowSds(simdat[,1:3])
+gp2_sd <- rowSds(simdat[,4:6])
 ```
 
 What do you expect to see when you plot gp1_avg vs gp2_avg?
