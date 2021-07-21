@@ -30,6 +30,7 @@ This script will create some interactive plots for you to explore that can be ac
 # Set-up
 
 ```{r setup, message=FALSE}
+if(!require("RNAseq123")) BiocManager::install("RNAseq123")
 if (!require("Mus.musculus")) {BiocManager::install("Mus.musculus")}
 #library(knitr)
 options(digits=3)
